@@ -102,21 +102,21 @@ Here we use the grid dataset as an example to show how the data look like. Basic
     linelist -> a list contains line information, one row contains [node_id_1, node_id_2] representing those two nodes are connected,
     width -> canvas width,
     height -> canvas height
-  }
-  x_idx -> specify which nodes current feature corresponding to.
-  x_ridx -> specify the node in original order index corresponding to which nodes in the new order index.
-  x -> input feature
-  pos -> normalized coordinates
+  },
+  x_idx -> specify which nodes current feature corresponding to,
+  x_ridx -> specify the node in original order index corresponding to which nodes in the new order index,
+  x -> input feature,
+  pos -> normalized coordinates,
 
   // Auxiliary attribute
-  len -> the number of nodes
+  len -> the number of nodes,
   bounding_box -> object, specifying the bounding box of layout, includes
   {
     left,right,top,bottom
-  }
-  adj -> Adjacency matrix,
-  graph -> Adjacency table,
-  connected -> whether this graph is connected.
+  },
+  adj -> adjacency matrix,
+  graph -> adjacency table,
+  connected -> whether this graph is connected
 }
 ```
 
