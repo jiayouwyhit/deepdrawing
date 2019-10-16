@@ -61,7 +61,7 @@ We tested the case where gcc version == 7.4.0, but failed to successfully instal
 ### Launch
 
 #### Model Training
-Please download the grid dataset from [this link](https://drive.google.com/drive/folders/1LjxuVp_eIA3Z0CT7ctFr-U3tmakVj2aR?usp=sharing) and put all the corresponding data folders to the folder ``main_data_folder/data''.
+For demo purpose, please download the grid dataset from [this link](https://drive.google.com/drive/folders/1LjxuVp_eIA3Z0CT7ctFr-U3tmakVj2aR?usp=sharing) and put all the corresponding data folders to the folder ``main_data_folder/data''.
 
 Then go to the main folder and run 
 ```
