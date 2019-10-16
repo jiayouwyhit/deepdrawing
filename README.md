@@ -29,7 +29,7 @@ If you find our work useful in your research, please consider citing:
 ### Download the code
 You can simply download the code by using github:
 ```
-$ git clone https://github.com/jiayouwyhit/DL4GD-code.git
+$ git clone https://github.com/jiayouwyhit/deepdrawing.git
 ```
 
 ### Prerequisites
