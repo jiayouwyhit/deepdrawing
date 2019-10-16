@@ -1,0 +1,8 @@
+# data folder
+main_data_folder/data
+main_data_folder/model_save
+main_data_folder/testing_results
+tensorboard/*
+
+__pycache__
+__pycache__/
