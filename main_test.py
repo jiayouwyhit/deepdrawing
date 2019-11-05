@@ -5,14 +5,15 @@ warnings.filterwarnings("ignore")
 
 ### Initialize
 opt = Args()
-opt.set_graphtype('grid_v2')
+opt.set_graphtype('pivotMds_grid')
 #opt.scale = 400
 print(opt.__dict__)  
 
 ### Modify the epoch number to the suitable value
-epoch=900
+epoch=1500
 # model_execute = "ModelName_DatasetName_TrialID"
-model_execute = "GraphLSTM_pyg-grid_v2-demo1"
+# model_execute = "GraphLSTM_pyg-grid_v2-demo1"
+model_execute = "GraphLSTM_pyg-pivotMds_grid-demo1"
 
 model_name = 'model_'+model_execute+'_'+str(epoch)+'.pkl'
 model_file = opt.main_data_folder + 'model_save/' + model_name

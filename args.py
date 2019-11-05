@@ -32,7 +32,7 @@ class Args():
             self.PYG_input = True
         #############################################################################################
         ## Training Process Basic Configuration ( can be manually set )
-        self.n_epochs = 4001
+        self.n_epochs = 1600 # 4000
         self.lr = 0.0015 # 0.001 , for Adam optimizer
         self.milestones = [50,100]  # for multistepLR
         self.lr_rate = 0.3  # for multistepLR
@@ -91,6 +91,13 @@ class Args():
             self.setPath(path_params)
             self.max_num_node = 576
             self.max_prev_node = 35
+            self.scale = 784.0
+            self.feature_size = 1
+            self.max_num_edge = 1104
+        elif self.graph_type == 'pivotMds_grid':
+            self.setPath(path_params)
+            self.max_num_node = 576
+            self.max_prev_node = 49
             self.scale = 784.0
             self.feature_size = 1
             self.max_num_edge = 1104

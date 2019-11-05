@@ -75,8 +75,10 @@ $ tensorboard --logdir=./tensorboard  --port=6007
 
 If you open your browser (http://localhost:6007), you will be able to see the loss plots like this:
 
-<img src="./figs/training-loss.png" width="400">
-
+<!-- <img src="./figs/training-loss.png" width="400"> -->
+<img src="./figs/training.png" width="400"> \
+<img src="./figs/validation.png" width="400"> \
+<img src="./figs/testing.png" width="400">
 
 
 In this repository, we implemented the GraphLSTM model with two different libraries: [PyG](https://github.com/rusty1s/pytorch_geometric) and [DGL](https://docs.dgl.ai/tutorials/models/index.html). According to our observation, the PyG-based implementation is faster than the DGL-based implementation. You can change the configurations in the file ``main_train.py''.

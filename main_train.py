@@ -7,9 +7,9 @@ from pre_train import *
 os.environ["CUDA_VISIBLE_DEVICES"] = "0,1"
 opt = Args()
 
-opt.set_graphtype('grid_v2')
+opt.set_graphtype('pivotMds_grid') # options: 'grid_v1', 'grid_v2', 'pivotMds_grid'
 # opt.executename = "ModelName_DatasetName_TrialID"
-opt.executename = "GraphLSTM_pyg-grid_v2-demo1"
+opt.executename = "GraphLSTM_pyg-pivotMds_grid-demo1"
 
 # Set the chosen model and related parameters
 # All the model candidates:
