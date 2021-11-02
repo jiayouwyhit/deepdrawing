@@ -105,9 +105,19 @@ Here we use the grid dataset as an example to show how the data look like. Basic
     width -> canvas width,
     height -> canvas height
   },
-  x_idx -> specify which nodes current feature corresponding to,
-  x_ridx -> specify the node in original order index corresponding to which nodes in the new order index,
-  x -> input feature,
+  x -> input feature, note: it is a list
+  /////////////////// 
+  // ‘x_idx’, ‘x_ridx’ are used to specify the correspondence of the nodes before and after the sorting. 
+  // For a graph with four nodes, we will give each node a unique id, e.g., 0,1,2,3. Suppose after the sorting, 
+  //     Node 3 => the first location, 
+  //     Node 1 => the second location,
+  //     Node 0 => the third location,
+  //     Node 2 => the fourth location. Then x_idx will be [3,1,0,2].
+  // For x_ridx (it is also a list), the i-th location will store the location of Node i in x_idx. Thus, it will be [2,1,3,0]. 
+  /////////////////// 
+  x_idx -> specify the node IDs (or index) after the sorting,
+  x_ridx -> specify the new index of each node after the sorting,
+ 
   pos -> normalized coordinates,
 
   // Auxiliary attribute
